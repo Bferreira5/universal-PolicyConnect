@@ -112,7 +112,7 @@ let colors = {
   'indigo-lighter': '#b2b7ff',
   'indigo-lightest': '#e6e8ff',
 
-  'purple-darkest': '#21183c',
+  'purple-darkest': '#354052',
   'purple-darker': '#382b5f',
   'purple-dark': '#794acf',
   'purple': '#9561e2',

@@ -1,5 +1,5 @@
 {
-    "name": "Universal",
+    "name": "Policy Connect",
     "url": "none",
     "author": {
         "name": "Benjamin Ferreira",
@@ -10,7 +10,8 @@
     "images": {
         "favicon": "/images/favicon.ico",
         "twitter": "/images/meta/twitter.jpg",
-        "og": "/images/meta/og.jpg"
+        "og": "/images/meta/og.jpg",
+        "profile": "/images/blog/post-1.jpg"
     },
     "social_links": {
         "facebook": "https://www.facebook.com",
