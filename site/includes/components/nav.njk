@@ -1,12 +1,11 @@
 <nav id="nav" class="nav flex">
-
     <ul class="menu flex flex-col md:flex-row items-center list-reset text-base">
-        {% for item in navigation.main %}
+        {# {% for item in navigation.main %}
             <li class="level-1 mb-4 md:mr-4 md:mb-0">
                 <a href="{{ item.url | safe }}" class="link font-bold text-black {% if page.url == item.url %}active text-purple-dark{% endif %}
             ">{{ item.label }}</a>
             </li>
-        {% endfor %}
+        {% endfor %} #}
         <li>
             <button class="inline-block mt-0 px-3 py-2 text-grey js-btn">
                 <svg class="w-4 fill-current text-white" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -46,7 +45,7 @@
         </li>
         <li>
             <button class="inline-block mt-0 px-3 py-2">
-                <img src="" alt="">
+                <img class="h-10" src="{{ site.images.profile }}" alt="">
             </button>
         </li>
     </ul>

@@ -1,42 +1,44 @@
 <!doctype html>
 <html lang="en" class="min-h-full antialiased">
-<head>
-    {# include our meta tags #}
-    {% include "components/meta.njk" %}
+    <head>
+        {# include our meta tags #}
+        {% include "components/meta.njk" %}
 
-    {# include main.css in development mode #}
-    {% if helpers.environment == "development" %}
-    <link rel="stylesheet" href="/css/main.css">
-    {% else %}
-    {# otherwise, use main.min.css #}
-    <link rel="stylesheet" href="/css/main.min.css">
-    {% endif %}
+        {# include main.css in development mode #}
+        {% if helpers.environment == "development" %}
+            <link rel="stylesheet" href="/css/main.css">
+        {% else %}
+            {# otherwise, use main.min.css #}
+            <link rel="stylesheet" href="/css/main.min.css">
+        {% endif %}
 
-    {# favicon #}
-    <link rel="icon" type="image/png" href="{{ site.images.favicon }}">
-</head>
+        {# favicon #}
+        <link rel="icon" type="image/png" href="{{ site.images.favicon }}">
 
-<body {% if body_class %} id="{{ body_class }}"{% endif %} class="min-h-full font-sans text-lg text-purple-darkest leading-normal">
+        <link rel="stylesheet" href=https://use.fontawesome.com/releases/v5.6.3/css/all.css integrity=sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/ crossorigin="anonymous">
+    </head>
 
-    <div id="wrapper" class="wrapper flex flex-col relative min-h-screen">
+    <body {% if body_class %} id="{{ body_class }}"{% endif %} class="min-h-full font-sans text-lg text-purple-darkest leading-normal">
 
-        {# include header #}
-        {% include "components/header.njk" %}
+        <div id="wrapper" class="wrapper flex flex-col relative min-h-screen">
 
-        {# include content #}
-        {{ content | safe }}
+            {# include header #}
+            {% include "components/header.njk" %}
 
-        {# include footer #}
-        {% include "components/footer.njk" %}
+            {# include content #}
+            {{ content | safe }}
 
-    </div>
+            {# include footer #}
+            {% include "components/footer.njk" %}
 
-    {# include scripts #}
-    {% if helpers.environment == "development" %}
-    <script src="/javascript/main.js"></script>
-    {% else %}
-    <script src="/javascript/main.min.js"></script>
-    {% endif %}
+        </div>
 
-</body>
+        {# include scripts #}
+        {% if helpers.environment == "development" %}
+            <script src="/javascript/main.js"></script>
+        {% else %}
+            <script src="/javascript/main.min.js"></script>
+        {% endif %}
+
+    </body>
 </html>

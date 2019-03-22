@@ -5,12 +5,12 @@
             "url": "/"
         },
         {
-            "label": "About",
-            "url": "/about/"
+            "label": "Policy Dashboard",
+            "url": "/policies/"
         },
         {
-            "label": "Blog",
-            "url": "/blog/"
+            "label": "Invoice Detail",
+            "url": "/invoice/"
         },
         {
             "label": "Contact",
