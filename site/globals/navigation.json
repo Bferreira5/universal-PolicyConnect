@@ -13,6 +13,10 @@
             "url": "/invoice/"
         },
         {
+            "label": "Confirmation of Renewal",
+            "url": "/cor/"
+        },
+        {
             "label": "Contact",
             "url": "/contact/"
         }
