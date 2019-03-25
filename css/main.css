@@ -1534,6 +1534,40 @@ select {
   /* Chrome & Safari height */
 }
 
+.container--tabs .nav-tabs > li > a {
+  background-color: #fff;
+  display: inline-block;
+  color: #3490dc;
+  font-weight: 600;
+}
+
+.container--tabs .nav-tabs > li.active > a,
+.container--tabs .nav-tabs > li.active > a:hover,
+.container--tabs .nav-tabs > li.active > a:focus {
+  margin-bottom: -1px;
+  background-color: #fff;
+  display: inline-block;
+  border-left-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+  color: #2779bd;
+  font-weight: 600;
+}
+
+.container--tabs .tab-content > .tab-pane {
+  display: none;
+}
+
+.container--tabs .tab-content > .tab-pane.active {
+  display: block;
+}
+
+.container--tabs .tab-content > .active {
+  display: block;
+}
+
 /* CHECKBOX TOGGLE SWITCH */
 
 .form-switch {

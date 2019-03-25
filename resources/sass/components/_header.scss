@@ -939,3 +939,38 @@ table.control {
 select {
     height: 48px;  /* Chrome & Safari height */
 }
+
+
+.container--tabs {
+
+	.nav-tabs {
+
+		> li {
+			> a {
+                @apply .bg-white .inline-block .text-blue .font-semibold;
+			}
+
+			&.active {
+				> a,
+				> a:hover,
+				> a:focus {
+                    @apply .-mb-px .bg-white .inline-block .border-l .border-t .border-r .rounded-t .text-blue-dark .font-semibold;
+				}
+			}
+		}
+	}
+
+	.tab-content {
+		> .tab-pane {
+			@apply .hidden;
+
+			&.active {
+                @apply .block;
+			}
+		}
+
+		> .active {
+            @apply .block;
+		}
+	}
+}
