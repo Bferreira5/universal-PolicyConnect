@@ -4,6 +4,9 @@ meta_title: Home
 meta_description: Homepage description
 body_class: home
 title: Welcome to the FM Global Universal Front-End
+dash_1: /images/art/poco-sketch-1.png
+dash_2: /images/art/poco-sketch-2.png
+dash_3: /images/art/poco-sketch-3.png
 ---
 
 <main id="main" class="main m-auto flex flex-1 flex-col md:flex-row py-10">
@@ -67,46 +70,32 @@ title: Welcome to the FM Global Universal Front-End
          <h1 class="text-center text-2xl font-normal mb-1">Hello Ariana! Welcome to back to Policy Connect.</h1>
          <p class="text-center text-xl text-grey-darker">From here you can check out the latest updates and announcements.</p>
       </section>
+
       <section class="font-sans container m-auto max-w-xl flex flex-col flex-wrap sm:flex-row justify-center">
-         <div class="w-full sm:w-1/2 lg:w-1/4 text-center py-8">
-            <label for="" class="uppercase tracking-loose font-bold text-sm">Basic Plan</label>
-            <h1 for="" class="uppercase tracking-loose font-bold text-5xl my-2">$29<span class="text-grey-dark font-light text-xs">/mo</span></h1>
-            <p class="my-2 text-grey-darker">
-               <strong class="text-black pr-2">5</strong>Projects</p>
-            <p class="my-2 text-grey-darker">
-               <strong class="text-black pr-2">20</strong>Images</p>
-            <p class="mt-2 mb-6 text-grey-darker">
-               <strong class="text-black pr-2">9/5</strong>Support</p>
-            <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">Buy Now</button>
+         <div class="w-full sm:w-1/2 lg:w-1/3 text-center py-8 px-6">
+            <img src="{{ dash_1 }}" class="w-32">
+            <img src="" alt="">
+            <p class="mt-2 mb-6 text-grey-darker">Elit aenean nec sem, nibh aptent, nulla viverra praesent sit.</p>
+            <button class="bg-transparent hover:bg-black text-white bg-grey-darkest font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent w-full">View All Policies</button>
          </div>
-         <div class="w-full sm:w-1/2 lg:w-1/4 text-center py-8">
-            <label for="" class="uppercase tracking-loose font-bold text-sm">Team Plan</label>
-            <h1 for="" class="uppercase tracking-loose font-bold text-5xl my-2">$59<span class="text-grey-dark font-light text-xs">/mo</span></h1>
-            <p class="my-2 text-grey-darker">
-               <strong class="text-black pr-2">10</strong>Projects</p>
-            <p class="my-2 text-grey-darker">
-               <strong class="text-black pr-2">40</strong>Images</p>
-            <p class="mt-2 mb-6 text-grey-darker">
-               <strong class="text-black pr-2">12/7</strong>Support</p>
-            <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">Buy Now</button>
+         <div class="w-full sm:w-1/2 lg:w-1/3 text-center py-8 px-6">
+            <img src="{{ dash_2 }}" class="w-32">
+            <img src="" alt="">
+            <p class="mt-2 mb-6 text-grey-darker">Elit aenean nec sem, nibh aptent, nulla viverra praesent sit.</p>
+            <button class="bg-transparent hover:bg-black text-white bg-grey-darkest font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent w-full">Manage Payments</button>
          </div>
-         <div class="w-full sm:w-1/2 lg:w-1/4 text-center py-8">
-            <label for="" class="uppercase tracking-loose font-bold text-sm">Corporate Plan</label>
-            <h1 for="" class="uppercase tracking-loose font-bold text-5xl my-2">xxx<span class="text-grey-dark font-light text-xs">/mo</span></h1>
-            <p class="my-2 text-grey-darker">
-               <strong class="text-black pr-2">Unlimited</strong>Projects</p>
-            <p class="my-2 text-grey-darker">
-               <strong class="text-black pr-2">Unlimited</strong>Images</p>
-            <p class="mt-2 mb-6 text-grey-darker">
-               <strong class="text-black pr-2">24/7</strong>Support</p>
-            <button class="bg-transparent hover:bg-black text-black-dark font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent">Buy Now</button>
+         <div class="w-full sm:w-1/2 lg:w-1/3 text-center py-8 px-6">
+          <img src="{{ dash_3 }}" class="w-32">
+            <img src="" alt="">
+            <p class="mt-2 mb-6 text-grey-darker">Elit aenean nec sem, nibh aptent, nulla viverra praesent sit.</p>
+            <button class="bg-transparent hover:bg-black text-white bg-grey-darkest font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent w-full">Track In-Process</button>
          </div>
       </section>
 
       {# include table-container #}
       {% include "components/table-container.njk" %}
 
-      <section>
+      {# <section>
          <ul class="mb-12">
             <li>Tailwind CSS for beautiful and fast UI styling</li>
             <li>Gulp to watch and compile your Tailwind, SCSS &amp; JS files</li>
@@ -120,6 +109,6 @@ title: Welcome to the FM Global Universal Front-End
                </li>
             {% endfor %}
          </ul>
-      </section>
+      </section> #}
    </section>
 </main>
