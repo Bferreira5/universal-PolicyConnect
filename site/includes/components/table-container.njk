@@ -1,0 +1,27 @@
+<div class="container--tabs shadow-lg">
+   <nav class="z-50">
+      <ul class="list-reset flex nav-tabs">
+         <li class="mr-1 active">
+            <a class="py-2 px-8" href="#tab-1">Action Required</a>
+         </li>
+         <li class="mr-1">
+            <a class="py-2 px-8" href="#tab-2">Pending Renewal</a>
+         </li>
+         <li class="mr-1">
+            <a class="py-2 px-8" href="#tab-3">Updated Recently</a>
+         </li>
+      </ul>
+   </nav>
+   <div class="tab-content">
+      <article id="tab-1" class=" border-t p-8 tab-pane active">
+         {# include table-1 #}
+         {% include "components/tables/table-1.njk" %}
+      </article>
+
+      <article id="tab-2" class=" border p-8 tab-pane"></article>
+
+      <article id="tab-3" class=" border p-8 tab-pane"></article>
+
+      <article id="tab-4" class=" border p-8 tab-pane"></article>
+   </div>
+</div>

@@ -50,3 +50,14 @@ window.addEventListener("load", function () {
     myTabs[i].addEventListener("click", myTabClicks);
   }
 });
+var tableMenus = document.querySelectorAll('.table-js--toggle');
+tableMenus.forEach(function (tableMenu) {
+  tableMenu.addEventListener('click', function (event) {
+    console.log("forEach worked");
+    console.log(event.target); // Get the parent with the `.accordion` class
+
+    var closestParent = event.target.closest('.table-js--parent');
+    console.log(closestParent);
+    closestParent.classList.toggle('open');
+  });
+});
