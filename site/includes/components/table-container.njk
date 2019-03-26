@@ -13,15 +13,21 @@
       </ul>
    </nav>
    <div class="tab-content">
-      <article id="tab-1" class=" border-t p-8 tab-pane active">
+      <article id="tab-1" class=" border-t px-8 pt-8 pb-6 tab-pane active">
          {# include table-1 #}
          {% include "components/tables/table-1.njk" %}
       </article>
 
-      <article id="tab-2" class=" border p-8 tab-pane"></article>
+      <article id="tab-2" class=" border p-8 tab-pane">
+         {% include "components/tables/table-1.njk" %}
+      </article>
 
-      <article id="tab-3" class=" border p-8 tab-pane"></article>
+      <article id="tab-3" class=" border p-8 tab-pane">
+         <h3>No results</h3>
+      </article>
 
-      <article id="tab-4" class=" border p-8 tab-pane"></article>
+      <article id="tab-4" class=" border p-8 tab-pane">
+         {# Placeholder #}
+      </article>
    </div>
 </div>

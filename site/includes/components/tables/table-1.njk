@@ -12,7 +12,7 @@
                <th>FM Policy No.</th>
                <th>Local Policy No.</th>
                <th>Effective Dates</th>
-               <th>Status</th>
+               <th class="pl-4">Status</th>
             </tr>
          </thead>
          <tbody>
@@ -41,22 +41,532 @@
                   <span class="column-label">Effective Dates</span>
                   <span>01-Apr-2019 / 01-Apr-2020</span>
                </td>
-               <td class="column-actions w-full">
-                  <div class="btn-group action-more table-js--parent relative ">
-                     <a class="dropdown-toggle px-6 table-js--toggle">Action Required</a>
-                     <ul class="dropdown-menu bg-white list-reset shadow w-32 absolute">
-                        <li>
-                           <a href="">Edit</a>
-                        </li>
-                        <li class="warning">
-                           <a href="#">Delete</a>
-                        </li>
-                     </ul>
+               <td class="column-actions w-full align-middle">
+                  <div class="btn-group action-more table-js--parent ">
+                     <a class="dropdown-toggle text-left text-black table-js--toggle p-4">
+                        Action Required
+                        <i class="ml-3">
+                           <svg class="w-3" viewBox="0 0 22 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                 <polygon id="Triangle" fill="#000000" transform="translate(11.000000, 6.000000) scale(-1, -1) translate(-11.000000, -6.000000) " points="11 0 22 12 0 12"></polygon>
+                              </g>
+                           </svg>
+                        </i>
+                     </a>
+                     <div class="dropdown-menu bg-white shadow absolute text-left ">
+                        <ul class="list-reset">
+                           <li>
+                              <a class="inline-block w-full p-4"href="">Partial Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Full Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Split Payment</a>
+                           </li>
+                        </ul>
+                     </div>
                   </div>
                </td>
             </tr>
-
+            <tr>
+               {# Checkbox Table Col #}
+               {# <td class="">
+                  <input type="checkbox" id="checkbox-0">
+                  <label for="checkbox-0"></label>
+               </td> #}
+               <td class="">
+                  <span class="column-label">Account Name</span>
+                  <span class="has-status-icon">
+                     {# <span class="status status-live" title="Published"></span> #}
+                     <a href="/cor" class="has-status-icon" >ACME Widgets Inc</a>
+                  </span>
+               </td>
+               <td class="">
+                  <span class="column-label">FM Policy No</span>
+                  <span>1000001</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Count</span>
+                  <span>F-2019-123456</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Effective Dates</span>
+                  <span>01-Apr-2019 / 01-Apr-2020</span>
+               </td>
+               <td class="column-actions w-full align-middle">
+                  <div class="btn-group action-more table-js--parent ">
+                     <a class="dropdown-toggle text-left text-black table-js--toggle p-4">
+                        Action Required
+                        <i class="ml-3">
+                           <svg class="w-3" viewBox="0 0 22 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                 <polygon id="Triangle" fill="#000000" transform="translate(11.000000, 6.000000) scale(-1, -1) translate(-11.000000, -6.000000) " points="11 0 22 12 0 12"></polygon>
+                              </g>
+                           </svg>
+                        </i>
+                     </a>
+                     <div class="dropdown-menu bg-white shadow absolute text-left ">
+                        <ul class="list-reset">
+                           <li>
+                              <a class="inline-block w-full p-4"href="">Partial Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Full Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Split Payment</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               {# Checkbox Table Col #}
+               {# <td class="">
+                  <input type="checkbox" id="checkbox-0">
+                  <label for="checkbox-0"></label>
+               </td> #}
+               <td class="">
+                  <span class="column-label">Account Name</span>
+                  <span class="has-status-icon">
+                     {# <span class="status status-live" title="Published"></span> #}
+                     <a href="/cor" class="has-status-icon" >ACME Widgets Inc</a>
+                  </span>
+               </td>
+               <td class="">
+                  <span class="column-label">FM Policy No</span>
+                  <span>1000001</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Count</span>
+                  <span>F-2019-123456</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Effective Dates</span>
+                  <span>01-Apr-2019 / 01-Apr-2020</span>
+               </td>
+               <td class="column-actions w-full align-middle">
+                  <div class="btn-group action-more table-js--parent ">
+                     <a class="dropdown-toggle text-left text-black table-js--toggle p-4">
+                        Action Required
+                        <i class="ml-3">
+                           <svg class="w-3" viewBox="0 0 22 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                 <polygon id="Triangle" fill="#000000" transform="translate(11.000000, 6.000000) scale(-1, -1) translate(-11.000000, -6.000000) " points="11 0 22 12 0 12"></polygon>
+                              </g>
+                           </svg>
+                        </i>
+                     </a>
+                     <div class="dropdown-menu bg-white shadow absolute text-left ">
+                        <ul class="list-reset">
+                           <li>
+                              <a class="inline-block w-full p-4"href="">Partial Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Full Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Split Payment</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               {# Checkbox Table Col #}
+               {# <td class="">
+                  <input type="checkbox" id="checkbox-0">
+                  <label for="checkbox-0"></label>
+               </td> #}
+               <td class="">
+                  <span class="column-label">Account Name</span>
+                  <span class="has-status-icon">
+                     {# <span class="status status-live" title="Published"></span> #}
+                     <a href="/cor" class="has-status-icon" >ACME Widgets Inc</a>
+                  </span>
+               </td>
+               <td class="">
+                  <span class="column-label">FM Policy No</span>
+                  <span>1000001</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Count</span>
+                  <span>F-2019-123456</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Effective Dates</span>
+                  <span>01-Apr-2019 / 01-Apr-2020</span>
+               </td>
+               <td class="column-actions w-full align-middle">
+                  <div class="btn-group action-more table-js--parent ">
+                     <a class="dropdown-toggle text-left text-black table-js--toggle p-4">
+                        Action Required
+                        <i class="ml-3">
+                           <svg class="w-3" viewBox="0 0 22 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                 <polygon id="Triangle" fill="#000000" transform="translate(11.000000, 6.000000) scale(-1, -1) translate(-11.000000, -6.000000) " points="11 0 22 12 0 12"></polygon>
+                              </g>
+                           </svg>
+                        </i>
+                     </a>
+                     <div class="dropdown-menu bg-white shadow absolute text-left ">
+                        <ul class="list-reset">
+                           <li>
+                              <a class="inline-block w-full p-4"href="">Partial Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Full Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Split Payment</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               {# Checkbox Table Col #}
+               {# <td class="">
+                  <input type="checkbox" id="checkbox-0">
+                  <label for="checkbox-0"></label>
+               </td> #}
+               <td class="">
+                  <span class="column-label">Account Name</span>
+                  <span class="has-status-icon">
+                     {# <span class="status status-live" title="Published"></span> #}
+                     <a href="/cor" class="has-status-icon" >ACME Widgets Inc</a>
+                  </span>
+               </td>
+               <td class="">
+                  <span class="column-label">FM Policy No</span>
+                  <span>1000001</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Count</span>
+                  <span>F-2019-123456</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Effective Dates</span>
+                  <span>01-Apr-2019 / 01-Apr-2020</span>
+               </td>
+               <td class="column-actions w-full align-middle">
+                  <div class="btn-group action-more table-js--parent ">
+                     <a class="dropdown-toggle text-left text-black table-js--toggle p-4">
+                        Action Required
+                        <i class="ml-3">
+                           <svg class="w-3" viewBox="0 0 22 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                 <polygon id="Triangle" fill="#000000" transform="translate(11.000000, 6.000000) scale(-1, -1) translate(-11.000000, -6.000000) " points="11 0 22 12 0 12"></polygon>
+                              </g>
+                           </svg>
+                        </i>
+                     </a>
+                     <div class="dropdown-menu bg-white shadow absolute text-left ">
+                        <ul class="list-reset">
+                           <li>
+                              <a class="inline-block w-full p-4"href="">Partial Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Full Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Split Payment</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               {# Checkbox Table Col #}
+               {# <td class="">
+                  <input type="checkbox" id="checkbox-0">
+                  <label for="checkbox-0"></label>
+               </td> #}
+               <td class="">
+                  <span class="column-label">Account Name</span>
+                  <span class="has-status-icon">
+                     {# <span class="status status-live" title="Published"></span> #}
+                     <a href="/cor" class="has-status-icon" >ACME Widgets Inc</a>
+                  </span>
+               </td>
+               <td class="">
+                  <span class="column-label">FM Policy No</span>
+                  <span>1000001</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Count</span>
+                  <span>F-2019-123456</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Effective Dates</span>
+                  <span>01-Apr-2019 / 01-Apr-2020</span>
+               </td>
+               <td class="column-actions w-full align-middle">
+                  <div class="btn-group action-more table-js--parent ">
+                     <a class="dropdown-toggle text-left text-black table-js--toggle p-4">
+                        Action Required
+                        <i class="ml-3">
+                           <svg class="w-3" viewBox="0 0 22 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                 <polygon id="Triangle" fill="#000000" transform="translate(11.000000, 6.000000) scale(-1, -1) translate(-11.000000, -6.000000) " points="11 0 22 12 0 12"></polygon>
+                              </g>
+                           </svg>
+                        </i>
+                     </a>
+                     <div class="dropdown-menu bg-white shadow absolute text-left ">
+                        <ul class="list-reset">
+                           <li>
+                              <a class="inline-block w-full p-4"href="">Partial Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Full Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Split Payment</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               {# Checkbox Table Col #}
+               {# <td class="">
+                  <input type="checkbox" id="checkbox-0">
+                  <label for="checkbox-0"></label>
+               </td> #}
+               <td class="">
+                  <span class="column-label">Account Name</span>
+                  <span class="has-status-icon">
+                     {# <span class="status status-live" title="Published"></span> #}
+                     <a href="/cor" class="has-status-icon" >ACME Widgets Inc</a>
+                  </span>
+               </td>
+               <td class="">
+                  <span class="column-label">FM Policy No</span>
+                  <span>1000001</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Count</span>
+                  <span>F-2019-123456</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Effective Dates</span>
+                  <span>01-Apr-2019 / 01-Apr-2020</span>
+               </td>
+               <td class="column-actions w-full align-middle">
+                  <div class="btn-group action-more table-js--parent ">
+                     <a class="dropdown-toggle text-left text-black table-js--toggle p-4">
+                        Action Required
+                        <i class="ml-3">
+                           <svg class="w-3" viewBox="0 0 22 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                 <polygon id="Triangle" fill="#000000" transform="translate(11.000000, 6.000000) scale(-1, -1) translate(-11.000000, -6.000000) " points="11 0 22 12 0 12"></polygon>
+                              </g>
+                           </svg>
+                        </i>
+                     </a>
+                     <div class="dropdown-menu bg-white shadow absolute text-left ">
+                        <ul class="list-reset">
+                           <li>
+                              <a class="inline-block w-full p-4"href="">Partial Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Full Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Split Payment</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               {# Checkbox Table Col #}
+               {# <td class="">
+                  <input type="checkbox" id="checkbox-0">
+                  <label for="checkbox-0"></label>
+               </td> #}
+               <td class="">
+                  <span class="column-label">Account Name</span>
+                  <span class="has-status-icon">
+                     {# <span class="status status-live" title="Published"></span> #}
+                     <a href="/cor" class="has-status-icon" >ACME Widgets Inc</a>
+                  </span>
+               </td>
+               <td class="">
+                  <span class="column-label">FM Policy No</span>
+                  <span>1000001</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Count</span>
+                  <span>F-2019-123456</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Effective Dates</span>
+                  <span>01-Apr-2019 / 01-Apr-2020</span>
+               </td>
+               <td class="column-actions w-full align-middle">
+                  <div class="btn-group action-more table-js--parent ">
+                     <a class="dropdown-toggle text-left text-black table-js--toggle p-4">
+                        Action Required
+                        <i class="ml-3">
+                           <svg class="w-3" viewBox="0 0 22 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                 <polygon id="Triangle" fill="#000000" transform="translate(11.000000, 6.000000) scale(-1, -1) translate(-11.000000, -6.000000) " points="11 0 22 12 0 12"></polygon>
+                              </g>
+                           </svg>
+                        </i>
+                     </a>
+                     <div class="dropdown-menu bg-white shadow absolute text-left ">
+                        <ul class="list-reset">
+                           <li>
+                              <a class="inline-block w-full p-4"href="">Partial Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Full Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Split Payment</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               {# Checkbox Table Col #}
+               {# <td class="">
+                  <input type="checkbox" id="checkbox-0">
+                  <label for="checkbox-0"></label>
+               </td> #}
+               <td class="">
+                  <span class="column-label">Account Name</span>
+                  <span class="has-status-icon">
+                     {# <span class="status status-live" title="Published"></span> #}
+                     <a href="/cor" class="has-status-icon" >ACME Widgets Inc</a>
+                  </span>
+               </td>
+               <td class="">
+                  <span class="column-label">FM Policy No</span>
+                  <span>1000001</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Count</span>
+                  <span>F-2019-123456</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Effective Dates</span>
+                  <span>01-Apr-2019 / 01-Apr-2020</span>
+               </td>
+               <td class="column-actions w-full align-middle">
+                  <div class="btn-group action-more table-js--parent ">
+                     <a class="dropdown-toggle text-left text-black table-js--toggle p-4">
+                        Action Required
+                        <i class="ml-3">
+                           <svg class="w-3" viewBox="0 0 22 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                 <polygon id="Triangle" fill="#000000" transform="translate(11.000000, 6.000000) scale(-1, -1) translate(-11.000000, -6.000000) " points="11 0 22 12 0 12"></polygon>
+                              </g>
+                           </svg>
+                        </i>
+                     </a>
+                     <div class="dropdown-menu bg-white shadow absolute text-left ">
+                        <ul class="list-reset">
+                           <li>
+                              <a class="inline-block w-full p-4"href="">Partial Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Full Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Split Payment</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               {# Checkbox Table Col #}
+               {# <td class="">
+                  <input type="checkbox" id="checkbox-0">
+                  <label for="checkbox-0"></label>
+               </td> #}
+               <td class="">
+                  <span class="column-label">Account Name</span>
+                  <span class="has-status-icon">
+                     {# <span class="status status-live" title="Published"></span> #}
+                     <a href="/cor" class="has-status-icon" >ACME Widgets Inc</a>
+                  </span>
+               </td>
+               <td class="">
+                  <span class="column-label">FM Policy No</span>
+                  <span>1000001</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Count</span>
+                  <span>F-2019-123456</span>
+               </td>
+               <td class="">
+                  <span class="column-label">Effective Dates</span>
+                  <span>01-Apr-2019 / 01-Apr-2020</span>
+               </td>
+               <td class="column-actions w-full align-middle">
+                  <div class="btn-group action-more table-js--parent ">
+                     <a class="dropdown-toggle text-left text-black table-js--toggle p-4">
+                        Action Required
+                        <i class="ml-3">
+                           <svg class="w-3" viewBox="0 0 22 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                 <polygon id="Triangle" fill="#000000" transform="translate(11.000000, 6.000000) scale(-1, -1) translate(-11.000000, -6.000000) " points="11 0 22 12 0 12"></polygon>
+                              </g>
+                           </svg>
+                        </i>
+                     </a>
+                     <div class="dropdown-menu bg-white shadow absolute text-left ">
+                        <ul class="list-reset">
+                           <li>
+                              <a class="inline-block w-full p-4"href="">Partial Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Full Payment Received</a>
+                           </li>
+                           <li>
+                              <a class="inline-block w-full p-4" href="">Split Payment</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </td>
+            </tr>
          </tbody>
       </table>
+      <div class="flex justify-end flex-no-wrap text-sm mt-4">
+         <span class="flex mr-10">
+            <span class="mr-4">Rows per page:</span>
+            <span class="rows-selection-dropdown">
+            10
+            <i class="ml-1">
+               <svg class="w-2 h-2" viewBox="0 0 22 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                     <polygon id="Triangle" fill="#000000" transform="translate(11.000000, 6.000000) scale(-1, -1) translate(-11.000000, -6.000000) " points="11 0 22 12 0 12"></polygon>
+                  </g>
+               </svg>
+            </i>
+            </span>
+         </span>
+         <span class="mr-10">1-10 of 100</span>
+         <span class="text-right mr-2">
+            <a class="pr-4" href="">❮</a>
+            <a class="pl-4" href="">❯</a>
+         </span>
+      </div>
    </div>
 </div>

@@ -266,10 +266,8 @@
     }
 
 
-
     .column-actions {
         width: 168px;
-        text-align: center;
     }
 
     .checkbox-col label:before {
@@ -302,13 +300,13 @@ table {
     thead {}
 
     tr {
-        @apply .h-14;
+
     }
 
     th {}
 
     td {
-        @apply .text-base;
+        @apply .h-14 .text-base;
 
         input[type="checkbox"]+label {}
 
@@ -394,13 +392,11 @@ table {
 }
 
 .column-status {
-    text-align: center;
     width: 80px;
 }
 
 .column-actions {
-    text-align: right;
-    width: 30px;
+    text-align: left;
 }
 
 
@@ -532,62 +528,9 @@ td .btn-icon {
       ========================================================================== */
 
 .btn-group {
-    border-radius: 3px;
-    box-shadow: 0 0 0 1px rgba(50, 50, 93, .1), 0 2px 5px 0 rgba(50, 50, 93, .08), 0 1px 1.5px 0 rgba(0, 0, 0, .07), 0 1px 2px 0 rgba(0, 0, 0, .08), 0 0 0 0 transparent;
-    background: #fff;
     cursor: pointer;
     white-space: nowrap;
 
-    .btn,
-    .select {
-        box-shadow: none;
-        border-left: 1px solid transparent;
-        border-right: 1px solid transparent;
-        display: flex;
-        align-items: center;
-
-        &:hover,
-        &.depressed {
-            background: rgba(0, 0, 0, .02);
-            box-shadow: inset 0 0 2px rgba(0, 0, 0, .06);
-            z-index: 2;
-        }
-    }
-
-    .btn:first-child:active {
-        border-left: 1px solid transparent;
-    }
-
-    .btn:last-child:active {
-        border-right: 1px solid transparent;
-    }
-
-    .btn:not(:first-child),
-        {
-        border-left: 1px solid rgba(0, 0, 0, .06);
-    }
-
-    .btn:not(:last-of-type) {
-        border-right: 1px solid rgba(0, 0, 0, .06);
-    }
-
-    .btn.btn-primary:hover {
-        background: mix(black, lavender, 5%);
-    }
-
-    .btn.btn-danger:hover,
-    .btn.btn-danger.depressed {
-        background-color: #ac2925;
-    }
-
-    >.btn:first-child:not(:last-child):not(.dropdown-toggle) {
-        border-radius: 3px 0 0 3px;
-    }
-
-    >.btn:last-child:not(:first-child),
-    .btn-group>.dropdown-toggle:not(:first-child) {
-        border-radius: 0 3px 3px 0;
-    }
 }
 
 .btn-group.open .dropdown-toggle.btn-more {
@@ -595,78 +538,9 @@ td .btn-icon {
 }
 
 .btn-group.open .dropdown-toggle {
-    box-shadow: inset 0 0 2px rgba(0, 0, 0, .06);
+    @apply .bg-pink-lightest;
 }
 
-.btn-group.action-more {
-    background: transparent;
-    box-shadow: none;
-}
-
-.btn-group.btn-group-primary {
-    background-color: lavender;
-    box-shadow:
-        0 2px 5px 0 rgba(lavender, .05),
-        0 1px 2px 0 rgba(0, 0, 0, .07),
-        0 1px 3px 0 rgba(0, 0, 0, .08);
-    border-bottom: 1px solid #2090d5;
-
-    .btn.btn-primary {
-        border-top: none;
-        border-bottom: none;
-    }
-}
-
-
-
-.btn-upload {
-    border: dashed 1px grey;
-    color: grey;
-    font-size: 11px;
-    padding: 6px 20px;
-
-
-    strong {
-        color: grey;
-        font-weight: normal;
-        text-transform: uppercase;
-    }
-
-    &.btn-upload-full {
-        border: none;
-        display: block;
-        font-size: 16px;
-        min-height: 400px;
-        padding-top: 40%;
-        width: 100%;
-
-        strong {
-            color: gray;
-            display: block;
-            font-size: 18px;
-            margin-top: -30%;
-            padding-top: 120px;
-        }
-    }
-
-    &.btn-upload-small {
-        border: none;
-        font-size: 13px;
-        padding: 30px 0;
-        width: 20%;
-
-        a {
-            font-weight: bold;
-        }
-
-        strong {
-            color: grey;
-            display: block;
-            padding-top: 35px;
-
-        }
-    }
-}
 
 .open .dropdown-menu {
     transform: scale(1);
@@ -675,7 +549,6 @@ td .btn-icon {
     pointer-events: auto;
 }
 
-.dropdown-menu--container {}
 
 .dropdown-menu {
 
@@ -688,11 +561,10 @@ td .btn-icon {
     transition: all .1s ease-in;
     will-change: transform, opacity;
 
-    li>a {
-
+    li > a {
+        @apply .text-grey-darkest;
         &:hover {
-            background: lavender;
-            color: #fff;
+            @apply .text-black .bg-grey-light;
         }
     }
 
