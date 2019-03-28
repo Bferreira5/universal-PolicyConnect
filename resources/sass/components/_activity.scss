@@ -1,0 +1,36 @@
+.activity-entry {
+   @apply .bg-white .shadow .border-solid .border-t-4 .border-grey .px-3 .mb-8;
+
+}
+
+.activity-entry__post {
+
+   h5 {
+      @apply .text-grey-darker .text-xs .tracking-wide .font-bold .mb-1;
+   }
+}
+
+.activity-entry__status {
+   @apply .uppercase .text-red-light .text-xs .mb-0 .tracking-wide .tracking-wide .font-bold .text-grey-darker;
+
+}
+
+.activity-entry__tab {
+
+   @apply .flex .justify-between .items-center .h-12 .border-grey .border-b .mb-3;
+
+
+   &.activity-entry__tab--expanded {
+      svg {
+         transform: rotate(0deg);
+      }
+   }
+
+   &.activity-entry__tab--collapse {
+      @apply .border-0;
+
+      svg {
+         transform: rotate(180deg);
+      }
+   }
+}

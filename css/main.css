@@ -1187,6 +1187,58 @@ select {
   right: 0;
 }
 
+.activity-entry {
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+  border-style: solid;
+  border-top-width: 4px;
+  border-color: #b8c2cc;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  margin-bottom: 2rem;
+}
+
+.activity-entry__post h5 {
+  color: #606f7b;
+  font-size: .75rem;
+  letter-spacing: .05em;
+  font-weight: 700;
+  margin-bottom: .25rem;
+}
+
+.activity-entry__status {
+  text-transform: uppercase;
+  color: #ef5753;
+  font-size: .75rem;
+  margin-bottom: 0;
+  letter-spacing: .05em;
+  letter-spacing: .05em;
+  font-weight: 700;
+  color: #606f7b;
+}
+
+.activity-entry__tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  border-color: #b8c2cc;
+  border-bottom-width: 1px;
+  margin-bottom: .75rem;
+}
+
+.activity-entry__tab.activity-entry__tab--expanded svg {
+  transform: rotate(0deg);
+}
+
+.activity-entry__tab.activity-entry__tab--collapse {
+  border-width: 0;
+}
+
+.activity-entry__tab.activity-entry__tab--collapse svg {
+  transform: rotate(180deg);
+}
+
 .list-reset {
   list-style: none;
   padding: 0;
