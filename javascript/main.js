@@ -69,7 +69,7 @@ activityLog.forEach(function (logItem) {
     // var closestParent = event.target.closest('.table-js--parent');
     // console.log(closestParent);
 
-    logItem.classList.toggle('activity-entry__tab--expand');
-    logItem.classList.toggle('activity-entry__tab--collapse'); // logItem.classList.toggle('activity-entry__tab--expand');
+    logItem.classList.toggle('activity-entry__tab--collapse');
+    logItem.classList.toggle('activity-entry__tab--expand'); // logItem.classList.toggle('activity-entry__tab--expand');
   });
 });

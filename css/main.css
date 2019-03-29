@@ -1247,6 +1247,19 @@ select {
   visibility: visible;
 }
 
+.workspace-item .workspace-item__reveal {
+  display: none;
+}
+
+.workspace-item:hover {
+  border-color: #3490dc;
+  border-width: 2px;
+}
+
+.workspace-item:hover .workspace-item__reveal {
+  display: inline-block;
+}
+
 .list-reset {
   list-style: none;
   padding: 0;

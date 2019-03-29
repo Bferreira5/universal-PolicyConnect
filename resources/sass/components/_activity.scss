@@ -36,10 +36,27 @@
 
 }
 
-.activity-entry__tab--collapse + .activity-entry__log {
+.activity-entry__tab--collapse+.activity-entry__log {
    @apply .hidden;
 }
 
-.activity-entry__tab--expand + .activity-entry__log {
+.activity-entry__tab--expand+.activity-entry__log {
    @apply .visible;
+}
+
+.workspace-item {
+   .workspace-item__reveal {
+      display: none;
+
+   }
+
+   &:hover {
+      @apply .border-blue .border-2;
+
+      .workspace-item__reveal {
+         display: inline-block;
+
+      }
+
+   }
 }
