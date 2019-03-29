@@ -8,8 +8,8 @@ title: Policy Detail Page
 
 <main id="main" class="main flex flex-1 flex-row">
 
-   <section class="w-full">
-      <div class="policy-header inline-flex bg-grey-lighter w-full px-6 pb-4">
+   <section class="w-full ">
+      <div class="policy-header block md:inline-flex bg-grey-lighter w-full px-6 pb-4">
          <div class="my-2 mr-10">
             <label class="block text-sm leading-loose tracking-wide">ACCOUNT NAME – TERRITORY</label>
             <span class="block text-xl font-bold text-purple">ACME Widgets – Turkey</span>
@@ -32,8 +32,8 @@ title: Policy Detail Page
          </div>
       </div>
       <div class="workspace-area w-full">
-         <div class="container--tabs">
-            <nav class="z-50">
+         <div class="container--tabs ">
+            <nav class="z-50 responsive-tabs">
                <ul class="list-reset flex nav-tabs">
                   <li class="mr-1">
                      <a class="py-2 px-8" href="#tab-1">Overview</a>
@@ -119,11 +119,11 @@ title: Policy Detail Page
          </section>
       </main>
 
-      <section class="fixed pin-b bg-grey-lightest w-full flex border-t border-grey">
-         <div class="w-1/4">
+      <section class="md:fixed md:pin-b responsive-tabs bg-grey-lightest w-full flex flex-wrap border-t border-grey">
+         <div class="w-full md:w-1/4">
             <button class="text-grey-darker py-2 px-4 mt-4 mb-4 ml-6">❮ Discard Changes</button>
          </div>
-         <div class="w-3/4">
+         <div class="w-full md:w-3/4">
             <div class="float-right mr-8">
                <button class="bg-purple hover:bg-purple-darker text-white font-bold py-3 px-4 mt-4 mb-4 mr-6">Save Changes</button>
                <button class="bg-blue hover:bg-blue-dark text-white font-bold py-3 px-4 mt-4 mb-4 mr-6">Publish</button>

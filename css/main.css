@@ -1260,6 +1260,13 @@ select {
   display: inline-block;
 }
 
+.responsive-tabs {
+  width: 100vw;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .list-reset {
   list-style: none;
   padding: 0;

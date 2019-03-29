@@ -60,3 +60,7 @@
 
    }
 }
+
+.responsive-tabs {
+   @apply .w-screen .whitespace-no-wrap .overflow-x-auto .scrolling-touch;
+}
