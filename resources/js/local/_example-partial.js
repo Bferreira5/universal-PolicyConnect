@@ -27,7 +27,7 @@ window.addEventListener("load", function () {
 });
 
 
-const tableMenus = document.querySelectorAll('.table-js--toggle')
+const tableMenus = document.querySelectorAll('.table-js--toggle');
 
 tableMenus.forEach((tableMenu) => {
     tableMenu.addEventListener('click', (event) => {
@@ -42,3 +42,18 @@ tableMenus.forEach((tableMenu) => {
     });
 });
 
+const activityLog = document.querySelectorAll('.activity-entry__tab');
+
+activityLog.forEach((logItem) => {
+    logItem.addEventListener('click', (event) => {
+        console.log("forEach worked");
+        console.log(event.target);
+
+        // Get the parent with the `.accordion` class
+        // var closestParent = event.target.closest('.table-js--parent');
+        // console.log(closestParent);
+            logItem.classList.toggle('activity-entry__tab--expand');
+            logItem.classList.toggle('activity-entry__tab--collapse');
+        // logItem.classList.toggle('activity-entry__tab--expand');
+    });
+});

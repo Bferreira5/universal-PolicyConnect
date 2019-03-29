@@ -33,4 +33,13 @@
          transform: rotate(180deg);
       }
    }
+
+}
+
+.activity-entry__tab--collapse + .activity-entry__log {
+   @apply .hidden;
+}
+
+.activity-entry__tab--expand + .activity-entry__log {
+   @apply .visible;
 }
