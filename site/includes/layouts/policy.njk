@@ -12,19 +12,19 @@ layout: default
          </div>
          <div class="my-2 mr-10">
             <label class="block uppercase text-sm leading-loose tracking-wide">Account #</label>
-            <span class="block text-normal font-bold text-grey-darkest"> {{ account_number }}</span>
+            <span class="block text-normal font-bold text-grey-darkest">{{ account_number }}</span>
          </div>
          <div class="my-2 mr-10">
             <label class="block uppercase text-sm leading-loose tracking-wide">Policy #</label>
-            <span class="block text-normal font-bold text-grey-darkest">000123456</span>
+            <span class="block text-normal font-bold text-grey-darkest">{{ policy_number }}</span>
          </div>
          <div class="my-2 mr-10">
             <label class="block uppercase text-sm leading-loose tracking-wide">Worldreach Partner</label>
-            <span class="block text-normal font-bold text-grey-darkest">Mapree Sigorta A.S.</span>
+            <span class="block text-normal font-bold text-grey-darkest">{{ wrp_partner }}</span>
          </div>
          <div class="my-2 mr-10">
             <label class="block uppercase text-sm leading-loose tracking-wide">WRP Status</label>
-            <span class="block text-normal font-bold {% if policy.data.featured_image %} text-green">Published</span>
+            <span class="block text-normal font-bold text-purple">{{ wrp_status }}</span>
          </div>
       </div>
       <div class="workspace-area w-full">

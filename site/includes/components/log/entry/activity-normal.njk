@@ -1,3 +1,4 @@
+{# To Loop Over #}
 <div class="activity-entry ">
    <div class="activity-entry__tab activity-entry__tab--collapse ">
       <h4 class="activity-entry__status ">Status Changes</h4>
@@ -11,10 +12,12 @@
          </svg>
       </button>
    </div>
+
    {# Thread #}
    <div class="activity-entry__log">
       {# Post 1 #}
       <div class="activity-entry__post border-grey-lighter border-b-2 mb-4">
+
          <h4 class="activity-entry__status mb-3">Saved Changes</h4>
          <h5 class="">Changes</h5>
          {# To loop thru #}
@@ -28,7 +31,7 @@
          </ul>
          <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
          {# Comment #}
-         <h6 class="mb-2 text-xs text-grey-dark">John Perreira</h6>
+         <h6 class="mb-2 text-xs text-grey-dark">{{ thread_1.comment_1.comment_name }}</h6>
          <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">Has the Corprate Client Requested Terrorism coverage? If So, I need to ask the WRP for a Qoute.</p>
       </div>
       {# Post 2 #}
