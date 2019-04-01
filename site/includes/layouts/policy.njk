@@ -1,9 +1,5 @@
 ---
 layout: default
-meta_title: Policy Detail Page
-meta_description:
-body_class: policy
-title: Policy Detail Page
 ---
 
 <main id="main" class="main flex flex-1 flex-row">
@@ -11,24 +7,24 @@ title: Policy Detail Page
    <section class="w-full ">
       <div class="policy-header block md:inline-flex bg-grey-lighter w-full px-6 pb-4">
          <div class="my-2 mr-10">
-            <label class="block text-sm leading-loose tracking-wide">ACCOUNT NAME – TERRITORY</label>
-            <span class="block text-xl font-bold text-purple">ACME Widgets – Turkey</span>
+            <label class="block uppercase text-sm leading-loose tracking-wide">Account Name – Territory</label>
+            <span class="block text-xl font-bold text-purple">{{ account_name }} – {{ territory }}</span>
          </div>
          <div class="my-2 mr-10">
-            <label class="block text-sm leading-loose tracking-wide">ACCOUNT #</label>
-            <span class="block text-normal font-bold text-grey-darkest"> 01-23456</span>
+            <label class="block uppercase text-sm leading-loose tracking-wide">Account #</label>
+            <span class="block text-normal font-bold text-grey-darkest"> {{ account_number }}</span>
          </div>
          <div class="my-2 mr-10">
-            <label class="block text-sm leading-loose tracking-wide">Policy #</label>
+            <label class="block uppercase text-sm leading-loose tracking-wide">Policy #</label>
             <span class="block text-normal font-bold text-grey-darkest">000123456</span>
          </div>
          <div class="my-2 mr-10">
-            <label class="block text-sm leading-loose tracking-wide">WORLDREACH PARTNER</label>
+            <label class="block uppercase text-sm leading-loose tracking-wide">Worldreach Partner</label>
             <span class="block text-normal font-bold text-grey-darkest">Mapree Sigorta A.S.</span>
          </div>
          <div class="my-2 mr-10">
             <label class="block uppercase text-sm leading-loose tracking-wide">WRP Status</label>
-            <span class="block text-normal font-bold text-green">Published</span>
+            <span class="block text-normal font-bold {% if policy.data.featured_image %} text-green">Published</span>
          </div>
       </div>
       <div class="workspace-area w-full">

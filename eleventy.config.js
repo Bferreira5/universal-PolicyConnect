@@ -22,9 +22,10 @@ module.exports = eleventyConfig => {
     })
 
     // Collections
-    // eleventyConfig.addCollection('blog', collection => {
-    //     return collection.getFilteredByTag('blog').reverse()
-    // })
+    eleventyConfig.addCollection('policies', collection => {
+        return collection.getFilteredByTag('policy').reverse()
+    })
+
 
     // Layout aliases
     eleventyConfig.addLayoutAlias('default', 'layouts/default.njk')
