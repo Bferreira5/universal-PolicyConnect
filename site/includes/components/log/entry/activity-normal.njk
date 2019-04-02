@@ -13,6 +13,20 @@
       </button>
    </div>
 
+   <ul>
+   {% for item in thread_1 %}
+      <li>{{ item.comment.name }}, {{ item.comment.timestamp }},
+      <ul>
+         {% for thing in item.comment.change %}
+            <li>{{ thing }}</li>
+         {% endfor %}
+      </ul>
+      </li>
+   {% else %}
+
+   {% endfor %}
+   </ul>
+
    {# Thread #}
    <div class="activity-entry__log">
       {# Post 1 #}
@@ -43,58 +57,58 @@
             <li class="text-grey-darker text-sm font-medium">World Reach Partner Changed to <a href="#">MAPFRE Sigorta A.S.</a>
             </li>
             <li class="text-grey-darker text-sm font-medium">WRP changed from 82.0125% to <a href="#">83.0125%</a>
-         </ul>
-         {# Timestamp #}
-         <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
-         {# Comment #}
-         <h6 class="mb-2 text-xs text-grey-dark">John Perreira</h6>
-         <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">Has the Corprate Client Requested Terrorism coverage? If So, I need to ask the WRP for a Qoute.</p>
+            </ul>
+            {# Timestamp #}
+            <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
+            {# Comment #}
+            <h6 class="mb-2 text-xs text-grey-dark">John Perreira</h6>
+            <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">Has the Corprate Client Requested Terrorism coverage? If So, I need to ask the WRP for a Qoute.</p>
+         </div>
+         {# Post 3 #}
+         <div class="activity-entry__post border-grey-lighter border-b-2 mb-4">
+            {# Timestamp #}
+            <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
+            {# Comment #}
+            <h6 class="mb-2 text-xs text-grey-dark">Mary Lew</h6>
+            <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">I need to ask the WRP for a Qoute.</p>
+         </div>
+         {# Post 3 #}
+         <div class="activity-entry__post border-grey-lighter border-b-2 mb-4">
+            {# Timestamp #}
+            <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
+            {# Comment #}
+            <h6 class="mb-2 text-xs text-grey-dark">John Perreira</h6>
+            <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">Has the Corprate Client Requested Terrorism coverage? </p>
+         </div>
+         {# Post 3 #}
+         <div class="activity-entry__post border-grey-lighter border-b-2 mb-4">
+            {# Timestamp #}
+            <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
+            {# Comment #}
+            <h6 class="mb-2 text-xs text-grey-dark">Mary Lew</h6>
+            <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">Has the Corprate Client Requested Terrorism coverage? </p>
+         </div>
+         {# Post 2 #}
+         <div id="test-comment" class="activity-entry__post border-grey-lighter border-b-2 mb-4">
+            <h4 class="activity-entry__status mb-3">Saved Changes</h4>
+            <h5 class="">Changes</h5>
+            {# To loop thru #}
+            <ul class="mb-4 pl-6">
+               <li class="text-grey-darker text-sm font-medium">World Reach Partner Changed to <a href="#test-input">MAPFRE Sigorta A.S.</a>
+               </li>
+               <li class="text-grey-darker text-sm font-medium">WRP changed from 82.0125% to <a href="#">83.0125%</a>
+               </ul>
+               {# Timestamp #}
+               <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
+               {# Comment #}
+               <h6 class="mb-2 text-xs text-grey-dark">John Perreira</h6>
+               <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">Has the Corprate Client Requested Terrorism coverage? If So, I need to ask the WRP for a Qoute.</p>
+            </div>
+            {# Reply to Thread #}
+            <div>
+               <h5 class="text-blue text-xs text-wide tracking-wide font-bold uppercase mb-2">Reply to Thread</h5>
+               <textarea class="text-sm appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="story" name="story" rows="5" cols="33"></textarea>
+            </div>
+            <button class="uppercase font-bold text-sm text-blue hover:text-blue-dark py-2 mt-3">Add Comment</button>
+         </div>
       </div>
-      {# Post 3 #}
-      <div class="activity-entry__post border-grey-lighter border-b-2 mb-4">
-         {# Timestamp #}
-         <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
-         {# Comment #}
-         <h6 class="mb-2 text-xs text-grey-dark">Mary Lew</h6>
-         <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">I need to ask the WRP for a Qoute.</p>
-      </div>
-      {# Post 3 #}
-      <div class="activity-entry__post border-grey-lighter border-b-2 mb-4">
-         {# Timestamp #}
-         <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
-         {# Comment #}
-         <h6 class="mb-2 text-xs text-grey-dark">John Perreira</h6>
-         <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">Has the Corprate Client Requested Terrorism coverage? </p>
-      </div>
-      {# Post 3 #}
-      <div class="activity-entry__post border-grey-lighter border-b-2 mb-4">
-         {# Timestamp #}
-         <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
-         {# Comment #}
-         <h6 class="mb-2 text-xs text-grey-dark">Mary Lew</h6>
-         <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">Has the Corprate Client Requested Terrorism coverage? </p>
-      </div>
-      {# Post 2 #}
-      <div id="test-comment" class="activity-entry__post border-grey-lighter border-b-2 mb-4">
-         <h4 class="activity-entry__status mb-3">Saved Changes</h4>
-         <h5 class="">Changes</h5>
-         {# To loop thru #}
-         <ul class="mb-4 pl-6">
-            <li class="text-grey-darker text-sm font-medium">World Reach Partner Changed to <a href="#test-input">MAPFRE Sigorta A.S.</a>
-            </li>
-            <li class="text-grey-darker text-sm font-medium">WRP changed from 82.0125% to <a href="#">83.0125%</a>
-         </ul>
-         {# Timestamp #}
-         <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
-         {# Comment #}
-         <h6 class="mb-2 text-xs text-grey-dark">John Perreira</h6>
-         <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">Has the Corprate Client Requested Terrorism coverage? If So, I need to ask the WRP for a Qoute.</p>
-      </div>
-      {# Reply to Thread #}
-      <div>
-         <h5 class="text-blue text-xs text-wide tracking-wide font-bold uppercase mb-2">Reply to Thread</h5>
-         <textarea class="text-sm appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="story" name="story" rows="5" cols="33"></textarea>
-      </div>
-      <button class="uppercase font-bold text-sm text-blue hover:text-blue-dark py-2 mt-3">Add Comment</button>
-   </div>
-</div>
