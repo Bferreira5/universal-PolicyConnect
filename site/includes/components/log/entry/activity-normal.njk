@@ -1,108 +1,43 @@
-{# To Loop Over #}
-<div class="activity-entry ">
-   <div class="activity-entry__tab activity-entry__tab--collapse ">
-      <h4 class="activity-entry__status ">Status Changes</h4>
-      <button>
-         <svg class="w-6 h-6 text-grey fill-current " viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="Page-1" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
-               <g id="icon-shape">
-                  <polygon id="Combined-Shape" points="9.29289322 12.9497475 10 13.6568542 15.6568542 8 14.2426407 6.58578644 10 10.8284271 5.75735931 6.58578644 4.34314575 8"></polygon>
-               </g>
-            </g>
-         </svg>
-      </button>
-   </div>
-
-   <ul>
-   {% for item in thread_1 %}
-      <li>{{ item.comment.name }}, {{ item.comment.timestamp }},
-      <ul>
-         {% for thing in item.comment.change %}
-            <li>{{ thing }}</li>
-         {% endfor %}
-      </ul>
-      </li>
-   {% else %}
-
-   {% endfor %}
-   </ul>
-
-   {# Thread #}
-   <div class="activity-entry__log">
-      {# Post 1 #}
-      <div class="activity-entry__post border-grey-lighter border-b-2 mb-4">
-
-         <h4 class="activity-entry__status mb-3">Saved Changes</h4>
-         <h5 class="">Changes</h5>
-         {# To loop thru #}
-         <ul class="mb-4 pl-6">
-            <li class="text-grey-darker text-sm font-medium">World Reach Partner Changed to <a href="#">MAPFRE Sigorta A.S.</a>
-            </li>
-            <li class="text-grey-darker text-sm font-medium">Partner Notified of Renewal <a href="#">28-Feb-2018</a>
-            </li>
-            <li class="text-grey-darker text-sm font-medium">WRP changed from 82.0125% to <a href="#">83.0125%</a>
-            </li>
-         </ul>
-         <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
-         {# Comment #}
-         <h6 class="mb-2 text-xs text-grey-dark">{{ thread_1.comment_1.comment_name }}</h6>
-         <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">Has the Corprate Client Requested Terrorism coverage? If So, I need to ask the WRP for a Qoute.</p>
-      </div>
-      {# Post 2 #}
-      <div class="activity-entry__post border-grey-lighter border-b-2 mb-4">
-         <h4 class="activity-entry__status mb-3">Saved Changes</h4>
-         <h5 class="">Changes</h5>
-         {# To loop thru #}
-         <ul class="mb-4 pl-6">
-            <li class="text-grey-darker text-sm font-medium">World Reach Partner Changed to <a href="#">MAPFRE Sigorta A.S.</a>
-            </li>
-            <li class="text-grey-darker text-sm font-medium">WRP changed from 82.0125% to <a href="#">83.0125%</a>
-            </ul>
-            {# Timestamp #}
-            <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
-            {# Comment #}
-            <h6 class="mb-2 text-xs text-grey-dark">John Perreira</h6>
-            <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">Has the Corprate Client Requested Terrorism coverage? If So, I need to ask the WRP for a Qoute.</p>
+{# Comments Parent To Loop Over #}
+{% for group in comments %}
+   {% for item in group.thread %}
+      <div class="activity-entry ">
+         <div class="activity-entry__tab activity-entry__tab--collapse ">
+            <h4 class="activity-entry__status ">Status Changes</h4>
+            <button>
+               <svg class="w-6 h-6 text-grey fill-current " viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
+                     <g id="icon-shape">
+                        <polygon id="Combined-Shape" points="9.29289322 12.9497475 10 13.6568542 15.6568542 8 14.2426407 6.58578644 10 10.8284271 5.75735931 6.58578644 4.34314575 8"></polygon>
+                     </g>
+                  </g>
+               </svg>
+            </button>
          </div>
-         {# Post 3 #}
-         <div class="activity-entry__post border-grey-lighter border-b-2 mb-4">
-            {# Timestamp #}
-            <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
-            {# Comment #}
-            <h6 class="mb-2 text-xs text-grey-dark">Mary Lew</h6>
-            <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">I need to ask the WRP for a Qoute.</p>
-         </div>
-         {# Post 3 #}
-         <div class="activity-entry__post border-grey-lighter border-b-2 mb-4">
-            {# Timestamp #}
-            <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
-            {# Comment #}
-            <h6 class="mb-2 text-xs text-grey-dark">John Perreira</h6>
-            <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">Has the Corprate Client Requested Terrorism coverage? </p>
-         </div>
-         {# Post 3 #}
-         <div class="activity-entry__post border-grey-lighter border-b-2 mb-4">
-            {# Timestamp #}
-            <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
-            {# Comment #}
-            <h6 class="mb-2 text-xs text-grey-dark">Mary Lew</h6>
-            <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">Has the Corprate Client Requested Terrorism coverage? </p>
-         </div>
-         {# Post 2 #}
-         <div id="test-comment" class="activity-entry__post border-grey-lighter border-b-2 mb-4">
-            <h4 class="activity-entry__status mb-3">Saved Changes</h4>
-            <h5 class="">Changes</h5>
-            {# To loop thru #}
-            <ul class="mb-4 pl-6">
-               <li class="text-grey-darker text-sm font-medium">World Reach Partner Changed to <a href="#test-input">MAPFRE Sigorta A.S.</a>
-               </li>
-               <li class="text-grey-darker text-sm font-medium">WRP changed from 82.0125% to <a href="#">83.0125%</a>
+
+         {# Thread #}
+         <div class="activity-entry__log">
+            {# Post 1 #}
+            <div class="activity-entry__post border-grey-lighter border-b-2 mb-4">
+
+               <h4 class="activity-entry__status mb-3">Saved Changes</h4>
+               <h5 class="">Changes</h5>
+
+               {# To loop thru #}
+               <ul class="mb-4 pl-6">
+                  {% for item in item.comment.change %}
+                     <li class="text-grey-darker text-sm font-medium">Change: {{ item.event }}, {{ item.link }}, {{ item.sentence }}</li>
+                  {% endfor %}
                </ul>
-               {# Timestamp #}
-               <h6 class="mb-2 text-xs text-grey-dark">Posted 10/10/10</h6>
+               <h6 class="mb-2 text-xs text-grey-dark">Posted: {{ item.comment.origin_timestamp }}</h6>
+               <h6 class="mb-2 text-xs text-grey-dark">Original: {{ item.comment.origin_name }}</h6>
+
                {# Comment #}
-               <h6 class="mb-2 text-xs text-grey-dark">John Perreira</h6>
-               <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">Has the Corprate Client Requested Terrorism coverage? If So, I need to ask the WRP for a Qoute.</p>
+               {% for item in item.comment.message %}
+               <h6 class="mb-2 text-xs text-grey-dark">{{ item.name }}</h6>
+               <h6 class="mb-2 text-xs text-grey-dark">{{ item.timestamp }}</h6>
+               <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">{{ item.text }}</p>
+               {% endfor %}
             </div>
             {# Reply to Thread #}
             <div>
@@ -112,3 +47,5 @@
             <button class="uppercase font-bold text-sm text-blue hover:text-blue-dark py-2 mt-3">Add Comment</button>
          </div>
       </div>
+   {% endfor %}
+{% endfor %}
