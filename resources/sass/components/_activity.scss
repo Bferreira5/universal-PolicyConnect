@@ -64,3 +64,22 @@
 .responsive-tabs {
    @apply .w-screen .whitespace-no-wrap .overflow-x-auto .scrolling-touch;
 }
+
+.activity-entry__thread {
+   @apply .py-2 .border-t .border-grey;
+
+   .activity-entry__comment:nth-child(odd) {
+      @apply .mt-4 .border-r-2 .border-blue-lighter pr-1;
+      .activity-entry__id {
+         @apply .flex-row-reverse;
+      }
+   }
+
+   .activity-entry__comment:nth-child(even) {
+      @apply .border-l-2 .border-blue-lighter pl-1;
+      .activity-entry__id {
+         @apply .flex-row;
+      }
+   }
+}
+

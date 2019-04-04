@@ -11,13 +11,13 @@ comments:
   - thread:
       - comment:
           change:
-            - event: input 1
+            - event: "MAPFRE Sigorta A.S."
               link: "#it-worked"
-              sentence: "87 of 30 changed"
+              sentence: "MAPFRE changed to"
             - event: input 2
               link: "#it-worked"
               sentence: "87 of 30 changed"
-          origin_name: "1 Mark Joseph"
+          origin_name: "Mark Joseph"
           origin_timestamp: 01/01/19
           message:
             - text: "Has the Corprate Client Requested Terrorism coverage? If So, I need to ask the WRP for a Qoute."
@@ -25,13 +25,13 @@ comments:
               name: Bob Boberson
             - text: "Has the Corprate Client Requested Terrorism coverage? If So, I need to ask the WRP for a Qoute."
               timestamp: 01/01/19
-              name: Bob Boberson
+              name: Lew Rockwell
             - text: "Has the Corprate Client Requested Terrorism coverage? If So, I need to ask the WRP for a Qoute."
               timestamp: 01/01/19
-              name: Bob Boberson
+              name: John Smith
             - text: "Has the Corprate Client Requested Terrorism coverage? If So, I need to ask the WRP for a Qoute."
               timestamp: 01/01/19
-              name: Bob Boberson
+              name: Marie Sveraracha-wambu-long-name
             - text: "Has the Corprate Client Requested Terrorism coverage? If So, I need to ask the WRP for a Qoute."
               timestamp: 01/01/19
               name: Bob Boberson
@@ -40,13 +40,13 @@ comments:
               name: Bob Boberson
       - comment:
           change:
-            - event: input 1
+            - event: "MAPFRE Sigorta A.S."
               link: "#it-worked"
-              sentence: "87 of 30 changed"
+              sentence: "MAPFRE changed to"
             - event: input 2
               link: "#it-worked"
               sentence: "87 of 30 changed"
-          origin_name: "1 Mark Joseph"
+          origin_name: "Jan Gabriel"
           origin_timestamp: 01/01/19
   - thread:
       - comment:

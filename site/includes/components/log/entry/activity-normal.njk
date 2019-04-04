@@ -26,18 +26,25 @@
                {# To loop thru #}
                <ul class="mb-4 pl-6">
                   {% for item in item.comment.change %}
-                     <li class="text-grey-darker text-sm font-medium">Change: {{ item.event }}, {{ item.link }}, {{ item.sentence }}</li>
+                     <li class="text-grey-darker text-sm font-medium">{{ item.sentence }} <a href="{{ item.link }}">{{ item.event }}.</a></li>
                   {% endfor %}
                </ul>
-               <h6 class="mb-2 text-xs text-grey-dark">Posted: {{ item.comment.origin_timestamp }}</h6>
-               <h6 class="mb-2 text-xs text-grey-dark">Original: {{ item.comment.origin_name }}</h6>
-
+               <div class="flex justify-between">
+                  <h6 class="mb-2 text-xs text-grey-dark">Posted: <span class="inline-block text-blue">{{ item.comment.origin_timestamp }}</span></h6>
+                  <h6 class="mb-2 text-xs text-grey-dark">Original: <span class="inline-block text-blue">{{ item.comment.origin_name }}</span></h6>
+               </div>
                {# Comment #}
-               {% for item in item.comment.message %}
-               <h6 class="mb-2 text-xs text-grey-dark">{{ item.name }}</h6>
-               <h6 class="mb-2 text-xs text-grey-dark">{{ item.timestamp }}</h6>
-               <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">{{ item.text }}</p>
-               {% endfor %}
+               <div class="activity-entry__thread">
+                  {% for item in item.comment.message %}
+                  <div class="activity-entry__comment">
+                     <div class="activity-entry__id flex justify-between">
+                        <h6 class="mb-2 text-xs text-grey-dark">{{ item.name }}</h6>
+                        <h6 class="mb-2 text-xs text-grey-dark">{{ item.timestamp }}</h6>
+                     </div>
+                     <p class="mb-6 text-grey-darker font-medium text-sm bg-grey-lightest py-1 px-1">{{ item.text }}</p>
+                  </div>
+                  {% endfor %}
+               </div>
             </div>
             {# Reply to Thread #}
             <div>

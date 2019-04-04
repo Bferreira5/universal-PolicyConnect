@@ -1267,6 +1267,34 @@ select {
   -webkit-overflow-scrolling: touch;
 }
 
+.activity-entry__thread {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-top-width: 1px;
+  border-color: #b8c2cc;
+}
+
+.activity-entry__thread .activity-entry__comment:nth-child(odd) {
+  margin-top: 1rem;
+  border-right-width: 2px;
+  border-color: #bcdefa;
+  padding-right: .25rem;
+}
+
+.activity-entry__thread .activity-entry__comment:nth-child(odd) .activity-entry__id {
+  flex-direction: row-reverse;
+}
+
+.activity-entry__thread .activity-entry__comment:nth-child(even) {
+  border-left-width: 2px;
+  border-color: #bcdefa;
+  padding-left: .25rem;
+}
+
+.activity-entry__thread .activity-entry__comment:nth-child(even) .activity-entry__id {
+  flex-direction: row;
+}
+
 .list-reset {
   list-style: none;
   padding: 0;
