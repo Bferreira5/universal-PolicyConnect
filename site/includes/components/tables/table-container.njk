@@ -1,0 +1,45 @@
+<div class="">
+   <div class="">
+      <table class="dossier has-checkboxes">
+         <thead>
+            <tr>
+               {# Checkbox Table Header #}
+               <th class="checkbox-col">
+                  <input type="checkbox" id="checkbox-all">
+                  <label for="checkbox-all"></label>
+               </th>
+               <th>Account Name</th>
+               <th>FM Policy No.</th>
+               <th>Local Policy No.</th>
+               <th>Effective Dates</th>
+               <th class="pl-4">Status</th>
+            </tr>
+         </thead>
+         <tbody>
+            {% for policy in collections.policy %}
+               {% include "components/tables/table-row.njk" %}
+            {% endfor %}
+         </tbody>
+      </table>
+      <div class="flex justify-end flex-no-wrap text-sm mt-4">
+         <span class="flex mr-10">
+            <span class="mr-4">Rows per page:</span>
+            <span class="rows-selection-dropdown">
+            10
+            <i class="ml-1">
+                  <svg class="w-2 h-2" viewBox="0 0 22 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                     <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <polygon id="Triangle" fill="#000000" transform="translate(11.000000, 6.000000) scale(-1, -1) translate(-11.000000, -6.000000) " points="11 0 22 12 0 12"></polygon>
+                     </g>
+                  </svg>
+               </i>
+            </span>
+         </span>
+         <span class="mr-10">1-10 of 100</span>
+         <span class="text-right mr-2">
+            <a class="pr-4" href="">❮</a>
+            <a class="pl-4" href="">❯</a>
+         </span>
+      </div>
+   </div>
+</div>

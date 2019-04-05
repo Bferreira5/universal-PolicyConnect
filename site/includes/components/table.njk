@@ -14,16 +14,17 @@
    </nav>
    <div class="tab-content">
       <article id="tab-1" class=" border-t px-8 pt-8 pb-6 tab-pane active">
-         {# include table-1 #}
-         {% include "components/tables/table-1.njk" %}
+      {# include table-1 #}
+         {% include "components/tables/table-container.njk" %}
+
       </article>
 
       <article id="tab-2" class=" border p-8 tab-pane">
-         {% include "components/tables/table-1.njk" %}
+         <h3>No Policies Pending Renewal</h3>
       </article>
 
       <article id="tab-3" class=" border p-8 tab-pane">
-         <h3>No results</h3>
+         <h3>No Updates</h3>
       </article>
 
       <article id="tab-4" class=" border p-8 tab-pane">

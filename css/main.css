@@ -1247,6 +1247,11 @@ select {
   visibility: visible;
 }
 
+.workspace-item {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
 .workspace-item .workspace-item__reveal {
   display: none;
 }

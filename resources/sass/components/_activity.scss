@@ -45,6 +45,7 @@
 }
 
 .workspace-item {
+   @apply .py-3;
    .workspace-item__reveal {
       display: none;
 
