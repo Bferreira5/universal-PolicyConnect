@@ -1,6 +1,7 @@
 {# Comments Parent To Loop Over #}
 {% for group in comments %}
    {% for item in group.thread %}
+   {# Thread #}
       <div class="activity-entry ">
          <div class="activity-entry__tab activity-entry__tab--collapse ">
             <h4 class="activity-entry__status ">Status Changes</h4>
@@ -14,10 +15,8 @@
                </svg>
             </button>
          </div>
-
-         {# Thread #}
          <div class="activity-entry__log">
-            {# Post 1 #}
+            {# Comment Section #}
             <div class="activity-entry__post border-grey-lighter border-b-2 mb-4">
 
                <h4 class="activity-entry__status mb-3">Saved Changes</h4>
@@ -33,7 +32,7 @@
                   <h6 class="mb-2 text-xs text-grey-dark">Posted: <span class="inline-block text-blue">{{ item.comment.origin_timestamp }}</span></h6>
                   <h6 class="mb-2 text-xs text-grey-dark">Original: <span class="inline-block text-blue">{{ item.comment.origin_name }}</span></h6>
                </div>
-               {# Comment #}
+               {# Messages #}
                <div class="activity-entry__thread">
                   {% for item in item.comment.message %}
                   <div class="activity-entry__comment">

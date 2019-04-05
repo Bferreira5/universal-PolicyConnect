@@ -1250,10 +1250,32 @@ select {
 .workspace-item {
   padding-top: .75rem;
   padding-bottom: .75rem;
+  border-color: transparent;
+  border-width: 2px;
+  transition: all .15s ease;
+}
+
+.workspace-item .workspace-item__top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1.5rem;
+}
+
+.workspace-item .workspace-item__top--inactive .workspace-item__comment-block {
+  display: none;
 }
 
 .workspace-item .workspace-item__reveal {
-  display: none;
+  visibility: hidden;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #3490dc;
+  font-size: .75rem;
+  font-weight: 700;
+  margin-left: .75rem;
+  margin-bottom: 1.5rem;
 }
 
 .workspace-item:hover {
@@ -1262,7 +1284,7 @@ select {
 }
 
 .workspace-item:hover .workspace-item__reveal {
-  display: inline-block;
+  visibility: visible;
 }
 
 .responsive-tabs {

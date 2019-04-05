@@ -45,22 +45,36 @@
 }
 
 .workspace-item {
-   @apply .py-3;
-   .workspace-item__reveal {
-      display: none;
+   @apply .py-3 .border-transparent .border-2;
+   transition: all .15s ease;
 
+   .workspace-item__top {
+      @apply .w-full .flex .justify-end .pr-6;
+
+   }
+
+   .workspace-item__top--inactive {
+
+      .workspace-item__comment-block {
+         @apply .hidden;
+      }
+   }
+
+   .workspace-item__reveal {
+      @apply .invisible .inline-block .uppercase .tracking-wide .text-blue .text-xs .font-bold .ml-3 .mb-6;
    }
 
    &:hover {
       @apply .border-blue .border-2;
 
       .workspace-item__reveal {
-         display: inline-block;
+         @apply .visible;
 
       }
 
    }
 }
+
 
 .responsive-tabs {
    @apply .w-screen .whitespace-no-wrap .overflow-x-auto .scrolling-touch;
@@ -71,6 +85,7 @@
 
    .activity-entry__comment:nth-child(odd) {
       @apply .mt-4 .border-r-2 .border-blue-lighter pr-1;
+
       .activity-entry__id {
          @apply .flex-row-reverse;
       }
@@ -78,9 +93,9 @@
 
    .activity-entry__comment:nth-child(even) {
       @apply .border-l-2 .border-blue-lighter pl-1;
+
       .activity-entry__id {
          @apply .flex-row;
       }
    }
 }
-

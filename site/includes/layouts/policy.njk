@@ -64,7 +64,11 @@ layout: default
                   </article>
 
                   <article id="tab-2" class=" border-t border-grey-light tab-pane active">
-                     {% include "components/workspace/summary-default.njk" %}
+                     {% if comments %}
+                        {% include "components/workspace/summary-active.njk" %}
+                     {% else %}
+                        {% include "components/workspace/summary-default.njk" %}
+                     {% endif %}
                   </article>
 
                   <article id="tab-3" class="border p-8 tab-pane">
