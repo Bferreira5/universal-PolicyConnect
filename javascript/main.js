@@ -73,3 +73,48 @@ activityLog.forEach(function (logItem) {
     logItem.classList.toggle('activity-entry__tab--expand'); // logItem.classList.toggle('activity-entry__tab--expand');
   });
 });
+
+function openModal() {
+  var modalTrigger = document.querySelectorAll('.modal-trigger');
+  modalTrigger.forEach(function (trigger) {
+    trigger.addEventListener('click', function (event) {
+      // remove "#" from #modal
+      var target = this.getAttribute('href').substr(1); // use dynamic target to reference given modal
+
+      var modalWindow = document.getElementById(target);
+
+      if (modalWindow.classList) {
+        modalWindow.classList.add('open');
+      }
+
+      event.preventDefault();
+    });
+  });
+}
+
+function closeModal() {
+  var closeBtns = document.querySelectorAll('.modal-close');
+  var modalOverlays = document.querySelectorAll('.modal-overlay');
+  closeBtns.forEach(function (btn) {
+    btn.addEventListener('click', function (event) {
+      // target the whole modal
+      var modalWindow = this.parentNode.parentNode;
+      modalWindow.classList.remove('open');
+    });
+  });
+  modalOverlays.forEach(function (overlay) {
+    // get the whole modal using overlay argument
+    var modalWindow = overlay.parentNode; // close modal if click event is fired on overlay background
+
+    overlay.addEventListener('click', function () {
+      modalWindow.classList.remove('open');
+    });
+  });
+}
+
+function fireWhenReady(func) {
+  document.addEventListener('DOMContentLoaded', func);
+}
+
+fireWhenReady(openModal);
+fireWhenReady(closeModal);
