@@ -1,13 +1,28 @@
-<div id="modal" class="modal fixed pin p-30 w-100 h-100 m-0 z-20 mt-4" role="dialog">
-  <div class="modal-overlay fixed pin z-10 bg-teal-dark"></div>
+<div id="modal" class="modal fixed pin p-30 w-full h-full m-0 z-20 mt-4" role="dialog">
+  <div class="modal-overlay fixed pin z-10 bg-grey-darkest opacity-50"></div>
   <div class="modal-container relative bg-white rounded-lg shadow max-w-lg mx-auto p-16 z-30" role="document">
 
-    <h3 class="font-sans text-2xl mb-2 text-teal-dark">Welcome to a super modal</h3>
-
-    <p class="font-serif leading-normal mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse hic quam velit fugiat ipsam, quos atque ex aperiam repellendus sequi qui perspiciatis deserunt officia fugit adipisci, consectetur veritatis, explicabo sit!</p>
-
-    <button class="modal-close bg-white hover:bg-grey-lightest text-grey-darkest font-semibold py-2 px-4 border border-grey-light rounded pin-b pin-r absolute mb-6 mr-6">Do something</button>
-
+    <h3 class="font-sans text-2xl mb-4">Save Changes</h3>
+    <div class="mb-10">
+      <h4 class="text-grey-darker text-normal font-bold mb-2">Set the right status for saving changes.</h4>
+      <div class="w-3/5">
+        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-state">COR Status</label>
+        <div class="relative">
+          <select class="block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-grey" id="grid-state">
+            <option>Host Office Review</option>
+            <option>COR Complete</option>
+            <option>Other Options</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="mb-6">
+      <h4 class="text-grey-darker text-normal font-bold mb-2">Add an optional comment.</h4>
+      <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-state">Comment Area</label>
+      <textarea class="text-sm appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="story" name="story" rows="5" cols="33"></textarea>
+    </div>
+    <a class="modal-close cursor-pointer">cancel</a>
+    <button class="modal-close bg-purple hover:bg-purple-darker text-white font-bold py-3 px-4 mt-4 mb-4 ml-6">Save Changes</button>
     <button class="modal-close absolute pin-t pin-r w-16 h-16" aria-label="Close">
       <svg width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
