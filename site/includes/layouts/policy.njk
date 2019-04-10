@@ -64,18 +64,14 @@ layout: default
                   </article>
 
                   <article id="tab-2" class=" border-t border-grey-light tab-pane active">
-                     {% if comments %}
-                        {% include "components/workspace/summary-active.njk" %}
-                     {% else %}
-                        {% include "components/workspace/summary-default.njk" %}
-                     {% endif %}
+                     {% include "components/workspace/summary-default.njk" %}
                   </article>
 
                   <article id="tab-3" class="border p-8 tab-pane">
                      <section class="flex">
                         <div class="w-full p-6">
                            <div>
-                              <h2>Incoice</h2>
+                              <h2>Invoice</h2>
                               <ul>
                                  <li>Term: 01-Mar-2018 to 01-Mar-2019</li>
                                  <li>Last updated: 15-Nov-2017 at 12:01 PM by George Glass</li>
@@ -86,11 +82,8 @@ layout: default
 
                      <article id="tab-4" class=" border p-8 tab-pane">
                         <div class="mb-6 pt-6">
-                           <h2>View</h2>
-                           <ul>
-                              <li>Term: 01-Mar-2018 to 01-Mar-2019</li>
-                              <li>Last updated: 15-Nov-2017 at 12:01 PM by George Glass</li>
-                           </ul>
+                           <h2>Policy</h2>
+                           {{ content | safe }}
                         </div>
                      </article>
 
@@ -120,7 +113,7 @@ layout: default
 
       <section class="md:fixed md:pin-b responsive-tabs bg-grey-lightest w-full flex flex-wrap border-t border-grey">
          <div class="w-full md:w-1/4">
-            <button class="text-grey-darker py-2 px-4 mt-4 mb-4 ml-6">❮ Discard Changes</button>
+            <a href="/" class="block text-grey-darker py-2 px-4 mt-4 mb-4 ml-6">❮ Discard Changes</a>
          </div>
          <div class="w-full md:w-3/4">
             <div class="float-right mr-8">

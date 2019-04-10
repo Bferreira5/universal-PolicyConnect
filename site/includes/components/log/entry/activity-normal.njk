@@ -50,7 +50,7 @@
                {%if item.comment.message %}<h5 class="text-blue text-xs text-wide tracking-wide font-bold uppercase mb-2">Reply to Thread</h5>{% endif %}
                <textarea class="text-sm appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="story" name="story" rows="5" cols="33"></textarea>
             </div>
-            <a href="/policies/policy-6/" class="inline-block uppercase font-bold text-sm text-blue hover:text-blue-dark py-2 mb-3">Add Comment</a>
+            <a href="{{ next_link }}" class="inline-block uppercase font-bold text-sm text-blue hover:text-blue-dark py-2 mb-3">Add Comment</a>
          </div>
       </div>
    {% endfor %}

@@ -60,6 +60,54 @@
       }
    }
 
+   .workspace-item__input {
+      label {
+         @apply .block .uppercase .tracking-wide .text-grey-darker .text-xs .font-bold .mb-2;
+      }
+      input[type=text] {
+         @apply .appearance-none .block w-full .bg-grey-lighter .text-grey-darker .border .border-grey-lighter .rounded .py-3 .px-4 .mb-3 .leading-tight;
+
+         &:focus {
+            @apply .outline-none .bg-white;
+         }
+      }
+      p {
+         @apply .text-xs .italic;
+      }
+   }
+
+   .workspace-item__input--verify {
+      label {
+         @apply .text-blue;
+      }
+      input[type=text] {
+         @apply .border-blue ;
+
+         &:focus {
+            @apply .outline-none .bg-white;
+         }
+      }
+      p {
+         @apply .text-blue .text-xs .italic;
+      }
+   }
+
+   .workspace-item__input--error {
+      label {
+         @apply .text-red;
+      }
+      input[type=text] {
+         @apply .border-red ;
+
+         &:focus {
+            @apply .outline-none .bg-white;
+         }
+      }
+      p {
+         @apply .text-red .text-xs .italic;
+      }
+   }
+
    .workspace-item__reveal {
       @apply .invisible .inline-block .uppercase .tracking-wide .text-blue .text-xs .font-bold .ml-3 .mb-6;
    }

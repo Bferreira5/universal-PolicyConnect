@@ -1,18 +1,18 @@
 ---
-title: Policy Example 1
+title: Policy Example 10
 account_name: ACME Widgets
 territory: Turkey
 account_number: "01-23456"
 policy_number: "000123123"
 wrp_partner: Mapree Sigorta A.S.
-wrp_status: Unpublished
+wrp_status: Unpublished (Unsaved)
 term_span: 01-Mar-2018 to 01-Mar-2019 (Updated)
-validate: false
+validate: true
 to_verify: true
 error_check: false
-next_link: "/policies/policy-9/"
-next_link_thread: "/policies/policy-8/"
-validation_link: "/policies/policy-9/"
+next_link: ""
+next_link_thread: ""
+validation_link: "/policies/policy-10/"
 comments:
   - thread:
       - comment:

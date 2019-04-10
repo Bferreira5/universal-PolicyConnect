@@ -7,6 +7,12 @@ policy_number: "000123123"
 wrp_partner: Mapree Sigorta A.S.
 wrp_status: Unpublished
 term_span: 01-Mar-2018 to 01-Mar-2019 (Updated)
+validate: false
+to_verify: true
+error_check: false
+next_link: "/policies/policy-6/"
+next_link_thread: "/policies/policy-8/"
+validation_link: "/policies/policy-9/"
 comments:
   - thread:
       - comment:
