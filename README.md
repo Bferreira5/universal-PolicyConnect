@@ -115,7 +115,7 @@ Use mapping of icons to common file types (PDF, Word, Excel) - in teams from Efr
 
 ## Task Flow
 
-*Flow 1** – Policy Review & Status – All Users
+**Flow** 1** – Policy Review & Status – All Users
 
 	Login > Dashboard > Policy Details > [change status] [ leave comment] [upload file]
 
