@@ -1,5 +1,5 @@
 <div class="container--tabs shadow-lg">
-   <nav class="z-50">
+   <nav class="z-50 w-screen md:w-full whitespace-no-wrap overflow-x-auto scrolling-touch">
       <ul class="list-reset flex nav-tabs">
          <li class="mr-1 active">
             <a class="py-2 px-8" href="#tab-1">Action Required</a>
@@ -13,7 +13,7 @@
       </ul>
    </nav>
    <div class="tab-content">
-      <article id="tab-1" class=" border-t px-8 pt-8 pb-6 tab-pane active">
+      <article id="tab-1" class=" border-t tab-pane active">
       {# include table-1 #}
          {% include "components/tables/table-container.njk" %}
 

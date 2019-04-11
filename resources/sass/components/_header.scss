@@ -289,44 +289,7 @@
 
 
 
-// General Typography
 
-table {
-    width: 100%;
-
-    thead {}
-
-    tr {
-
-    }
-
-    th {}
-
-    td {
-        @apply .h-14 .text-base;
-
-        input[type="checkbox"]+label {}
-
-        span.status {
-            border-radius: 7px;
-            display: inline-block;
-            height: 7px;
-            width: 7px;
-        }
-
-        span.status-draft {
-            background: grey;
-        }
-
-        span.status-hidden {
-            border: solid 1px grey;
-        }
-
-        span.status-live {
-            background: green;
-        }
-    }
-}
 
 .delete-column {
     background: #fff;

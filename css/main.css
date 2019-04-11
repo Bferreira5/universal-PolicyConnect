@@ -529,6 +529,30 @@ h6 {
   }
 }
 
+table td {
+  height: 3.5rem;
+  font-size: 1rem;
+}
+
+table td span.status {
+  border-radius: 7px;
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+}
+
+table td span.status-draft {
+  background: grey;
+}
+
+table td span.status-hidden {
+  border: solid 1px grey;
+}
+
+table td span.status-live {
+  background: green;
+}
+
 .container {
   width: 100%;
 }
@@ -834,34 +858,6 @@ h6 {
 
 .dossier .img img + span {
   margin-left: 8px;
-}
-
-table {
-  width: 100%;
-}
-
-table td {
-  height: 3.5rem;
-  font-size: 1rem;
-}
-
-table td span.status {
-  border-radius: 7px;
-  display: inline-block;
-  height: 7px;
-  width: 7px;
-}
-
-table td span.status-draft {
-  background: grey;
-}
-
-table td span.status-hidden {
-  border: solid 1px grey;
-}
-
-table td span.status-live {
-  background: green;
 }
 
 .delete-column {
