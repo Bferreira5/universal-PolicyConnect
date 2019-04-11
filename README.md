@@ -1,12 +1,16 @@
-# Policy Connect Divergent Prototype Q2 2019
+# Policy Connect Divergent Prototype Q2 2019 ✌️
+
+**⚠️Prototype Delivered and on hold.**
 
 Product Mission: Efficient, timely & quality delivery of global contract & related documents with focus on automation & transparency.
 
+Video Tour: https://fmglobal-my.sharepoint.com/:v:/p/benjamin_ferreira/Ea4bhGbIA9FMivqFawh9viYBkhehKk4zZ77cAGxdaEVRhw?e=vAvdk1
+
 ## Prototype Details
 
-This prototype was built with responsive web components in mind. Using the existing Policy Connect workflow as a benchmark the prototype seeks to test ideas in unified activity history, editing policy details in browser, and effective navigation across a policy.
+This prototype was built with responsive web components in mind. Using the existing Policy Connect workflow as a benchmark the prototype seeks to test ideas around unified activity history, editing policy details in browser, and effective navigation across a policy.
 
-
+✋ Bellow are the epics captured in this design. Most are captured in the divergent prototype or are structured to support beyond the epic.
 
 ## This Prototypes covers these Epics:
 
@@ -31,12 +35,12 @@ https://fmglobal.visualstudio.com/WWInsTracker/GLIDER/_boards/board/t/GLIDER/Epi
     1. **WRP Dashboard:** As a WRP Policy Connect user, I want to see a dashboard page co-branded with FM Global so that...
        - Given I am WRP Policy Connect user, When I access the dashboard, Then I see a top level banner of the FM Global logo
        - Given I am WRP Policy Connect user, When I access the dashboard, Then I see a second level banner of the Policy Connect logo and a placeholder for the WRP name
-    1. **WRP Active Renewals:** As a WRP Policy Connect user, I want to see all my renewals that are currently in process (not completed). This should include policies which have been confirmed (regardless of effective. date) and/or policies which effective date has lapsed.
-    2. **WRP View/update/confirm COR data:** As a WRP Policy Connect user, I want to confirm the renewal details (COR data) so that the renewal process can get started. This story includes ability for WRP to "Confirm with no changes" as well as make changes/updates (modify COR data) and then confirm. This story does not include the ability to upload quotes/docs to COR.
-    3. **WRP COR Comments w/ attachments:** As a WRP Policy Connect user, I want to be able to add a comment regarding the COR data and/or upload an quote/attachment so that all the COR information resides in one place.
-    4. **WRP Add Local Policy Numbers:** As a WRP user, I want to be able to add my policy number or numbers into Policy Connect to easily make the connection between FM Global's policy number and my policy number(s). One to many local policy numbers = one FM Global policy number.
-    5. **WRP Review:** As a WRP user, I want to be able to review policy and invoice drafts and other package documentation when the policy and invoice drafts and package has been completed so that I can ensure compliance by either accepting or rejecting the drafts with relevant comments, and when accepted, issue the policy and upload the issued documents.
-    6. **WRP Follow-Up Functionality**
+    2. **WRP Active Renewals:** As a WRP Policy Connect user, I want to see all my renewals that are currently in process (not completed). This should include policies which have been confirmed (regardless of effective. date) and/or policies which effective date has lapsed.
+    3. **WRP View/update/confirm COR data:** As a WRP Policy Connect user, I want to confirm the renewal details (COR data) so that the renewal process can get started. This story includes ability for WRP to "Confirm with no changes" as well as make changes/updates (modify COR data) and then confirm. This story does not include the ability to upload quotes/docs to COR.
+    4. **WRP COR Comments w/ attachments:** As a WRP Policy Connect user, I want to be able to add a comment regarding the COR data and/or upload an quote/attachment so that all the COR information resides in one place.
+    5. **WRP Add Local Policy Numbers:** As a WRP user, I want to be able to add my policy number or numbers into Policy Connect to easily make the connection between FM Global's policy number and my policy number(s). One to many local policy numbers = one FM Global policy number.
+    6. **WRP Review:** As a WRP user, I want to be able to review policy and invoice drafts and other package documentation when the policy and invoice drafts and package has been completed so that I can ensure compliance by either accepting or rejecting the drafts with relevant comments, and when accepted, issue the policy and upload the issued documents.
+    7. **WRP Follow-Up Functionality**
 
 3. **Policies Pending Issuing Office Review**
    1. **Policy State: Display of Policy Tracker:** As a user, I want to be able to see the current status of a policy, the previous status and if the policy is moving forward in the process or moving backwards due to an issue so that I can understand the take the appropriate actions.
