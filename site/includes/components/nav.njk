@@ -1,12 +1,12 @@
 <nav id="nav" class="nav flex">
-    <ul class="menu flex flex-col md:flex-row items-center list-reset text-base">
+    <ul class="menu flex flex-row items-center list-reset text-base">
         {# {% for item in navigation.main %}
             <li class="level-1 mb-4 md:mr-4 md:mb-0">
                 <a href="{{ item.url | safe }}" class="link font-bold text-black {% if page.url == item.url %}active text-purple-dark{% endif %}
             ">{{ item.label }}</a>
             </li>
         {% endfor %} #}
-        <li>
+        <li class="mr-2">
             <button class="inline-block mt-0 px-3 py-2 text-grey js-btn">
                 <svg class="w-4 fill-current text-white" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                     <title>search</title>
@@ -14,7 +14,7 @@
                 </svg>
             </button>
         </li>
-        <li>
+        <li class="mr-2">
             <button class="inline-block mt-0 px-3 py-2 text-grey js-btn">
                 <svg class="w-4 fill-current text-white" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <title>Item</title>
@@ -27,7 +27,7 @@
                 </svg>
             </button>
         </li>
-        <li>
+        <li class="mr-2">
             <button class="inline-block mt-0 px-3 py-2">
                 <svg class="w-4 fill-current text-white" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <title>Nav</title>
@@ -43,9 +43,9 @@
                 </svg>
             </button>
         </li>
-        <li>
-            <button class="inline-block mt-0 px-3 py-2">
-                <img class="h-10" src="{{ site.images.profile }}" alt="">
+        <li class="ml-2 mr-6">
+            <button class="py-auto mt-1 w-10">
+                <img class="block object-center" width="100%" src="{{ site.images.profile }}" alt="">
             </button>
         </li>
     </ul>
