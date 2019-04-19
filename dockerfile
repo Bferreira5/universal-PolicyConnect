@@ -22,7 +22,7 @@ COPY . /policyconnect
 EXPOSE 80
 
 #Build the app
-RUN npm run dev
+RUN npm run build
 
 #==================== Setting up stage ====================
 # Create image based on the official nginx - Alpine image
