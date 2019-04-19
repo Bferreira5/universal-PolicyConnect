@@ -19,7 +19,7 @@ RUN npm install
 COPY . /policyconnect
 
 # Expose the port the app runs in
-EXPOSE 443
+EXPOSE 80
 
 #Build the app
 RUN npm run dev
