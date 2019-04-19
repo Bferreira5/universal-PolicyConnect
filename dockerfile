@@ -1,4 +1,4 @@
-#==================== Building Stage ================================================ 
+#==================== Building Stage ================================================
 
 # Create the image based on the official Node 8.9.0 image from Dockerhub
 FROM node:8.9.0 as node
@@ -22,9 +22,9 @@ COPY . /policyconnect
 EXPOSE 443
 
 #Build the app
-RUN npm run build
+RUN npm run dev
 
-#==================== Setting up stage ==================== 
+#==================== Setting up stage ====================
 # Create image based on the official nginx - Alpine image
 FROM nginx:1.13.7-alpine
 
