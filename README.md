@@ -4,7 +4,7 @@
 
 Product Mission: Efficient, timely & quality delivery of global contract & related documents with focus on automation & transparency.
 
-**Video Tour:** https://fmglobal-my.sharepoint.com/:v:/p/benjamin_ferreira/Ea4bhGbIA9FMivqFawh9viYBkhehKk4zZ77cAGxdaEVRhw?e=vAvdk1
+<!-- **Video Tour:** https://fmglobal-my.sharepoint.com/:v:/p/benjamin_ferreira/Ea4bhGbIA9FMivqFawh9viYBkhehKk4zZ77cAGxdaEVRhw?e=vAvdk1 -->
 
 ## Prototype Details
 
@@ -14,8 +14,8 @@ This prototype was built with responsive web components in mind. Using the exist
 
 ## This Prototypes covers these Epics:
 
-Found Here:
-https://fmglobal.visualstudio.com/WWInsTracker/GLIDER/_boards/board/t/GLIDER/Epics
+<!-- Found Here:
+https://fmglobal.visualstudio.com/WWInsTracker/GLIDER/_boards/board/t/GLIDER/Epics -->
 
 ### Epics + Features
 
